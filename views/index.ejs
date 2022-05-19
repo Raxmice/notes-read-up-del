@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/plug'); %>
+    <title>Tasks-Home</title>
+</head>
+<body>
+    <div class="top">
+        <%- include('partials/header'); %>
+    </div>
+    <section>
+        <form action="/" method="post">
+        <h3>Type your Tasks or Notes and submit to Save</h3>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Type title here .....">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="3" placeholder="Type your tasks and notes ....."></textarea>
+          </div>
+          <!--radio buttons-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="flexRadioDefault1" value="false">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Not complete
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="flexRadioDefault2" value="true" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Complete
+            </label>
+          </div>
+          <button type="submit" class="btn btn-success submit">Submit</button>
+        </form>
+        </section>
+    <div class="bottum">
+        <%- include('partials/footer'); %>
+    </div>
+</body>
+</html>
