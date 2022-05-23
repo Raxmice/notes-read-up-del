@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static("public"));
 //connection
-mongoose.connect('mongodb+srv://Raxmice_98:Raxmice1998@noderax.tkfup.mongodb.net/tasks',{ useNewUrlParser: true }, ()=>{
+mongoose.connect('mongodb+srv://use-your-id:password-here@noderax.tkfup.mongodb.net/tasks',{ useNewUrlParser: true }, ()=>{
       console.log("connected");
   },
   e => console.error(e)
